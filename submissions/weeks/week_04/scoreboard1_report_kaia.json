@@ -1,0 +1,108 @@
+{
+ "student": "Kaia",
+ "variant": "gate-amp_lat__shape-two_sided__width-amplitude",
+ "kind": "candidate",
+ "question": "the same, with ties reverted to the baseline value",
+ "spec": {
+  "shape": "two_sided",
+  "pooling": "shared",
+  "drift": "exponential",
+  "profile": "gaussian",
+  "width": "amplitude",
+  "gate": "amp_lat",
+  "emission": "threshold"
+ },
+ "fitted_parameters": 27,
+ "held_out_nll_per_hemicycle_year": -26.283779529877435,
+ "between_hemicycle_spread": 18.410100090911616,
+ "paired_vs_baseline": {
+  "mean": -0.8639077600504125,
+  "se": 0.3905390048168107,
+  "median": -0.29564719921647153,
+  "better": 17,
+  "of": 18
+ },
+ "ks_median": 0.04191465646831058,
+ "ks_not_rejected": 8,
+ "count_error_percent": 10.514374056547865,
+ "plausibility": {
+  "cycle": 19,
+  "per_hemicycle": [
+   {
+    "hemicycle": "19N",
+    "predicted": 1449.992635552722,
+    "observed": 1590.0,
+    "centroid_model": 15.211402663391766,
+    "centroid_obs": 17.16069182389937,
+    "spread_model": 7.669242736411699,
+    "spread_obs": 8.50474278481396
+   },
+   {
+    "hemicycle": "19S",
+    "predicted": 1258.0226716651625,
+    "observed": 1121.0,
+    "centroid_model": 15.081641025989228,
+    "centroid_obs": 16.36842105263158,
+    "spread_model": 7.440964602470105,
+    "spread_obs": 7.601178491265532
+   }
+  ]
+ },
+ "protocol": {
+  "headline_amplitude": "area record",
+  "held_out_unit_contributed": [
+   "its time origin, fitted from its own events with the training cycles' drift timescale",
+   "its amplitude, predicted from the sunspot-area record through the map fitted on the training cycles"
+  ],
+  "withheld_cycles_untouched": [
+   16,
+   20,
+   22
+  ],
+  "declaration": "Each hemicycle was scored by a model fitted on the other cycles. The held-out wing contributed only the items listed in held_out_unit_contributed."
+ },
+ "fingerprint": {
+  "recipe": {
+   "mesh": [
+    201,
+    241
+   ],
+   "domain": [
+    0.0,
+    60.0
+   ],
+   "window": [
+    -6.0,
+    11.0
+   ],
+   "folds": [
+    12,
+    13,
+    14,
+    15,
+    17,
+    18,
+    19,
+    21,
+    23
+   ],
+   "withheld": [
+    16,
+    20,
+    22
+   ],
+   "analysis_set": [
+    12,
+    23,
+    30.0
+   ],
+   "gauge": [
+    1.0,
+    1.0,
+    15.0
+   ],
+   "headline_amplitude": "area record"
+  },
+  "digest": "5e55384fbc54"
+ }
+}
